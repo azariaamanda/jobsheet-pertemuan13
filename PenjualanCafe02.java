@@ -30,13 +30,13 @@ public class PenjualanCafe02 {
         
     }
     static void tampilanDataPenjualan(int[][] rekapPenjualan, String[] menuCafe) {
-
+        //tabel
         System.out.printf("%-15s", "Menu");
         for (int hari = 1; hari <= 7; hari++) {
             System.out.printf("%-10s", "Hari " + hari);
         }
         System.out.println();
-
+        //input angka penjualan
         for (int i = 0; i < rekapPenjualan.length; i++) {
             System.out.printf("%-15s", menuCafe[i]);
             for (int j = 0; j < rekapPenjualan[i].length; j++) {
@@ -45,7 +45,7 @@ public class PenjualanCafe02 {
             System.out.println();
         }
     }
-    public static String menuPenjualanTerbanyak(int[][] penjualan, String[] menuCafe) {
+    static String menuPenjualanTerbanyak(int[][] penjualan, String[] menuCafe) {
         String menuTerbanyak = "";
         int totalPenjualanTertinggi = 0;
     
@@ -68,8 +68,7 @@ public class PenjualanCafe02 {
             for (int j = 0; j < rekapPenjualan[i].length; j++) {
                 totalPenjualan += rekapPenjualan[i][j];
             }
-
-            double rataRata = (double) totalPenjualan / 7;
+            double rataRata = totalPenjualan / 7;
             System.out.println("Rata rata penjualan " + menuCafe[i] + ": " + rataRata);
         }
     }
