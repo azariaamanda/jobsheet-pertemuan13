@@ -12,7 +12,7 @@ public class PengunjungCafe02 {
         daftarPengunjung("Ali", "Budi", "Citra");
     }  
 }
-
+//     Contoh no 3
 //     public static void daftarPengunjung(String... namaPengunjung, int... umurPengunjung) {
 //         System.out.println("Daftar Nama dan Umur Pengunjung:");
 //         for (int i = 0; i < namaPengunjung.length; i++) {
